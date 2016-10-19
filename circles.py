@@ -1,13 +1,13 @@
 import cv2
 import numpy as np
-image = cv2.imread('ss.jpg')
+image = cv2.imread('balls.jpg')
 
 output = image.copy()
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 circles = cv2.HoughCircles(gray, cv2.cv.CV_HOUGH_GRADIENT, 1, 100,
               param1=250,
-              param2=60,
+              param2=50,
               minRadius=10,
               maxRadius=100)
 
