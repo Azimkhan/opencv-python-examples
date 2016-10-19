@@ -14,6 +14,6 @@ if img.shape[0] > max_height:
 sobel = cv2.Sobel(img, -1, 2,2, ksize=3, scale=2)
 laplace = cv2.Laplacian(img,-1)
 cv2.imshow('sobel', sobel)
-#cv2.imshow('original', img)
-#cv2.imshow('laplace', laplace)
+cv2.imshow('original', img)
+cv2.imshow('laplace', laplace)
 cv2.waitKey(0)
